@@ -1,4 +1,4 @@
-package com.example.library.domian.author.entity;
+package com.example.library.domain.author.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
-import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Entity

@@ -1,4 +1,4 @@
-package com.example.library.domian.expection;
+package com.example.library.domain.expection;
 
 public class BusinessRuleException extends RuntimeException {
     private static final long serialVersionUID = 1L;

@@ -1,8 +1,8 @@
 package com.example.library.api.assembler;
 
-import com.example.library.domian.author.dto.AuthorRequest;
-import com.example.library.domian.author.dto.AuthorResponse;
-import com.example.library.domian.author.entity.Author;
+import com.example.library.domain.author.dto.AuthorRequest;
+import com.example.library.domain.author.dto.AuthorResponse;
+import com.example.library.domain.author.entity.Author;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
