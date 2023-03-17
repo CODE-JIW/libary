@@ -1,7 +1,7 @@
 package com.example.library.api.exceptiohandle;
 
-import com.example.library.domian.expection.BusinessRuleException;
-import com.example.library.domian.expection.EntityNotFoundException;
+import com.example.library.domain.expection.BusinessRuleException;
+import com.example.library.domain.expection.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
@@ -40,7 +40,7 @@ public class ApiExpectionHandler extends ResponseEntityExceptionHandler {
         Error error = new Error();
         error.setStatus(status.value());
         error.setDateTime(OffsetDateTime.now());
-        error.setTitle("Erro ao válidar os campos, por favor preencha os campos correntamente!!!");
+        error.setTitle("Error validating the fields, please fill in the fields correctly!!!");
         error.setFields(fieldList);
 
         return  handleExceptionInternal(ex, error, headers, status, request);
